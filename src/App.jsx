@@ -1,5 +1,6 @@
 import Navbar from "./Components/Navbar"
-import Home from "./Components/Home"
+import Home from "./Pages/Home"
+import { Outlet } from "react-router-dom"
 function App() {
 
 
@@ -7,7 +8,7 @@ function App() {
 
     <div>
       <Navbar />
-      <Home />
+      <Outlet />
     </div>
 
   )

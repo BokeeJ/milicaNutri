@@ -1,21 +1,81 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+import { Link, NavLink } from 'react-router-dom';
+//react icons
+import { LuFacebook } from "react-icons/lu";
+import { LuInstagram } from "react-icons/lu";
+import { IoLogoTiktok } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 function Navbar() {
+    const [menu, Setmenu] = useState(false);
+    const handleMenu = () => {
+        Setmenu(!menu);
+    }
+    const handleClose = () => {
+        Setmenu(false);
+    }
+    const handleResize = () => {
+        if (window.innerWidth < 768) {
+            handleClose();
+        }
+    };
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <div className='flex flex-col justify-center items-center'>
-            <div>
-                <h1 className='text-4xl m-10 font-medium  p-5 text-gray-600 font-baskervville'>Nutricija za trijumf</h1>
+            <div className='flex flex-col items-center w-full'>
+                <div className='flex items-center'>
+                    <img className='w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] mt-5' src="/logo.webp" alt="logo" />
+                    <div className='flex gap-1 right-10 absolute'>
+                        <div className='lg:visible invisible flex cursor-pointer'>
+                            <LuInstagram size={35} color='green' />
+                            <LuFacebook size={35} color='green' />
+                            <IoLogoTiktok size={35} color='green' />
+                        </div>
+
+                        <div className='lg:invisible cursor-pointer'>
+                            <GiHamburgerMenu onClick={handleMenu} size={30} color='green' />
+                        </div>
+                    </div>
+
+                </div>
+                <h1 className='text-3xl p-10 font-medium  text-gray-800 font-baskervville'>NU<span className='text-green-600 font-extrabold text-4xl'>T</span>RICIJA ZA <span className='text-green-600 font-extrabold text-4xl'>T</span>RIJUMF</h1>
             </div>
-            <div>
-                <ul className='lg:text-xl flex lg:gap-10 gap-2 font-semibold cursor-pointer text-gray-600 lg:flex-row flex-col'>
-                    <li>POCETNA</li>
-                    <li>O NAMA</li>
-                    <li>USLUGE</li>
-                    <li>TRANSFORMACIJA</li>
-                    <li>UTISCI</li>
-                    <li>KONTAKT</li>
+            <nav className="relative">
+                {/* Burger button */}
+
+
+                {/* Meni za mobilni uređaj */}
+                <div className={`fixed top-0 left-0 w-full h-full z-50 bg-green-600 shadow-xl p-2 transition-transform duration-1000 ease-in-out text-center opacity-90 ${menu ? 'translate-x-0' : '-translate-x-full'} lg:hidden`}>
+                    <button className='text-black text-3xl absolute right-10' onClick={handleClose}>X</button>
+                    <ul className='text-l flex flex-col gap-2 font-bold cursor-pointer text-gray-800 p-10 h-full'>
+                        <Link to={'pocetna'} onClick={handleClose}>POCETNA</Link>
+                        <Link to={'onama'} onClick={handleClose} >O NAMA</Link>
+                        <Link to={'usluge'} onClick={handleClose} >USLUGE</Link>
+                        <Link to={'transformacija'} >TRANSFORMACIJA</Link>
+                        <Link to={'utisci'} onClick={handleClose} >UTISCI</Link>
+                        <Link to={'kontakt'} onClick={handleClose}>KONTAKT</Link>
+                    </ul>
+                </div>
+
+                {/* Meni za desktop */}
+                <ul className='hidden lg:flex lg:flex-row lg:gap-10 text-l font-medium cursor-pointer text-gray-800 p-5'>
+                    <NavLink to={'pocetna'} className='transition-all duration-500 ease-in-out hover:font-extrabold'>POCETNA</NavLink>
+                    <NavLink to={'onama'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>O NAMA</NavLink>
+                    <NavLink to={'usluge'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>USLUGE</NavLink>
+                    <NavLink to={'transformacija'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>TRANSFORMACIJA</NavLink>
+                    <NavLink to={'utisci'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>UTISCI</NavLink>
+                    <NavLink to={'kontakt'} className='transition-all duration-500 ease-in-out hover:font-extrabold'>KONTAKT</NavLink>
                 </ul>
-            </div>
+            </nav>
+
         </div>
     )
 }
