@@ -32,11 +32,18 @@ function Navbar() {
         <div className='flex flex-col justify-center items-center'>
             <div className='flex flex-col items-center w-full'>
                 <div className='flex items-center'>
-                    <img className='w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] mt-5' src="/logo.webp" alt="logo" />
+                    <Link to={'pocetna'}>
+                        <img className='w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] mt-5' src="/logo.webp" alt="logo" />
+                    </Link>
                     <div className='flex gap-1 right-10 absolute'>
                         <div className='lg:visible invisible flex cursor-pointer'>
-                            <LuInstagram size={35} color='green' />
-                            <LuFacebook size={35} color='green' />
+                            <a href='https://www.instagram.com/dijeteticarka_/' target='_blank' rel='noopener noreferrer'>
+                                <LuInstagram size={35} color='green' />
+                            </a>
+                            <a href='https://sr-rs.facebook.com/milica.dzelebdzic.5' target='_blank' rel='noopener noreferrer'>
+                                <LuFacebook size={35} color='green' />
+                            </a>
+
                             <IoLogoTiktok size={35} color='green' />
                         </div>
 
@@ -46,7 +53,7 @@ function Navbar() {
                     </div>
 
                 </div>
-                <h1 className='text-3xl p-10 font-medium  text-gray-800 font-baskervville'>NU<span className='text-green-600 font-extrabold text-4xl'>T</span>RICIJA ZA <span className='text-green-600 font-extrabold text-4xl'>T</span>RIJUMF</h1>
+                <h1 className='lg:text-3xl text-xl p-10 font-medium  text-gray-800 font-baskervville'>NU<span className='text-green-600 font-extrabold text-4xl'>T</span>RICIJA ZA <span className='text-green-600 font-extrabold text-4xl'>T</span>RIJUMF</h1>
             </div>
             <nav className="relative">
                 {/* Burger button */}
