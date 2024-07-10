@@ -32,7 +32,7 @@ function Navbar() {
         <div className='flex flex-col justify-center items-center'>
             <div className='flex flex-col items-center w-full'>
                 <div className='flex items-center'>
-                    <Link to={'pocetna'}>
+                    <Link to={'/'}>
                         <img className='w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] mt-5' src="/logo.webp" alt="logo" />
                     </Link>
                     <div className='flex gap-1 right-10 absolute'>
@@ -63,7 +63,7 @@ function Navbar() {
                 <div className={`fixed top-0 left-0 w-full h-full z-50 bg-green-600 shadow-xl p-2 transition-transform duration-1000 ease-in-out text-center opacity-90 ${menu ? 'translate-x-0' : '-translate-x-full'} lg:hidden`}>
                     <button className='text-black text-3xl absolute right-10' onClick={handleClose}>X</button>
                     <ul className='text-l flex flex-col gap-2 font-bold cursor-pointer text-gray-800 p-10 h-full'>
-                        <Link to={'pocetna'} onClick={handleClose}>POCETNA</Link>
+                        <Link to={'/'} onClick={handleClose}>POCETNA</Link>
                         <Link to={'onama'} onClick={handleClose} >O NAMA</Link>
                         <Link to={'usluge'} onClick={handleClose} >USLUGE</Link>
                         <Link to={'transformacija'} >TRANSFORMACIJA</Link>
@@ -74,7 +74,7 @@ function Navbar() {
 
                 {/* Meni za desktop */}
                 <ul className='hidden lg:flex lg:flex-row lg:gap-10 text-l font-medium cursor-pointer text-gray-800 p-5'>
-                    <NavLink to={'pocetna'} className='transition-all duration-500 ease-in-out hover:font-extrabold'>POCETNA</NavLink>
+                    <NavLink to={'/'} className='transition-all duration-500 ease-in-out hover:font-extrabold'>POCETNA</NavLink>
                     <NavLink to={'onama'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>O NAMA</NavLink>
                     <NavLink to={'usluge'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>USLUGE</NavLink>
                     <NavLink to={'transformacija'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>TRANSFORMACIJA</NavLink>

@@ -13,18 +13,18 @@ function Footer() {
             <div className='flex flex-col items-center'>
                 <h1 className='lg:text-xl  font-medium  text-gray-800 font-baskervville'>NU<span className='text-green-600 font-extrabold text-4xl'>T</span>RICIJA ZA <span className='text-green-600 font-extrabold text-4xl'>T</span>RIJUMF</h1>
                 <img src="/logo.webp" alt="logo" className='w-[100px] h-[100px]' />
-
             </div>
             {/* Mini meni */}
-            <div>
-                <ul className='flex gap-3 lg:flex-row flex-col'>
-                    <NavLink to={'pocetna'} className='transition-all duration-500 ease-in-out hover:font-extrabold'>POCETNA</NavLink>
+            <div className='p-5'>
+                <ul className='flex gap-3 lg:flex-row flex-col text-center shadow-lg p-5'>
+                    <NavLink to={'/'} className='transition-all duration-500 ease-in-out hover:font-extrabold'>POCETNA</NavLink>
                     <NavLink to={'onama'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>O NAMA</NavLink>
                     <NavLink to={'usluge'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>USLUGE</NavLink>
                     <NavLink to={'transformacija'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>TRANSFORMACIJA</NavLink>
                     <NavLink to={'utisci'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>UTISCI</NavLink>
                     <NavLink to={'kontakt'} className='transition-all duration-500 ease-in-out hover:font-extrabold'>KONTAKT</NavLink>
                 </ul>
+                <hr className='border-green-400 w-full border' />
             </div>
             {/* drustvene mreze */}
             <div className='flex'>

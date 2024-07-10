@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         baskervville: ['"Baskervville SC"', 'serif'],
+        pisano: ["Dancing Script", 'cursive'],
       },
     },
   },
