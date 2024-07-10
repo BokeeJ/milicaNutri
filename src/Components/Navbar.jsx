@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 
 import { Link, NavLink } from 'react-router-dom';
 //react icons
@@ -33,7 +34,21 @@ function Navbar() {
             <div className='flex flex-col items-center w-full'>
                 <div className='flex items-center'>
                     <Link to={'/'}>
-                        <img className='w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] mt-5' src="/logo.webp" alt="logo" />
+                        <motion.div animate={{
+                            scale: [1, 1.3, 1.3, 1, 1],
+                            rotate: [0, 0, 180, 180, 0],
+                            borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+                        }}
+                            transition={{
+                                duration: 2,
+                                ease: "easeInOut",
+                                times: [0, 0.2, 0.5, 0.8, 1],
+                                repeat: Infinity,
+                                repeatDelay: 1
+                            }} >
+
+                            <img className='w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] mt-5' src="/logo.webp" alt="logo" />
+                        </motion.div>
                     </Link>
                     <div className='flex gap-1 right-10 absolute'>
                         <div className='lg:visible invisible flex cursor-pointer'>
