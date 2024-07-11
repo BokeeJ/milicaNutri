@@ -11,7 +11,7 @@ function Footer() {
         <div className='w-full h-full justify-between flex p-5 items-center lg:flex-row flex-col'>
             {/* Logo */}
             <div className='flex flex-col items-center'>
-                <h1 className='lg:text-xl  font-medium  text-gray-800 font-baskervville'>NU<span className='text-green-600 font-extrabold text-4xl'>T</span>RICIJA ZA <span className='text-green-600 font-extrabold text-4xl'>T</span>RIJUMF</h1>
+                <h1 className='lg:text-xl  font-medium  text-gray-800 font-baskervville'>NU<span className='text-green-600 font-extrabold text-4xl inline-block transform rotate-45 m-1'>T</span>RICIJA ZA <span className='text-green-600 font-extrabold text-4xl '>T</span>RIJUMF</h1>
                 <img src="/logo.webp" alt="logo" className='w-[100px] h-[100px]' />
             </div>
             {/* Mini meni */}

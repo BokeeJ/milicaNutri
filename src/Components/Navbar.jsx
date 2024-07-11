@@ -68,7 +68,7 @@ function Navbar() {
                     </div>
 
                 </div>
-                <h1 className='lg:text-3xl text-xl p-10 font-medium  text-gray-800 font-baskervville'>NU<span className='text-green-600 font-extrabold text-4xl'>T</span>RICIJA ZA <span className='text-green-600 font-extrabold text-4xl'>T</span>RIJUMF</h1>
+                <h1 className='lg:text-3xl text-xl p-10 font-medium  text-gray-800 font-baskervville'>NU<span className='text-green-600 font-extrabold text-4xl inline-block transform rotate-45 m-1'>T</span>RICIJA ZA <span className='text-green-600 font-extrabold text-4xl'>T</span>RIJUMF</h1>
             </div>
             <nav className="relative">
                 {/* Burger button */}

@@ -22,19 +22,29 @@ function Home() {
     return (
         <div className='flex justify-center flex-col items-center'>
             {/* slika */}
-            <div className='relative lg:w-[600px] md:w-[500px] w-[360px] h-[600px]'>
-                <img className='w-full h-full rounded-md' src="/profil.webp" alt="Voce" />
+            <motion.div
+                className='relative box lg:w-[900px] md:w-[500px] w-[360px] h-[400px]'
+
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                    duration: 0.8,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+            >
+                <img className='w-full h-full rounded-md' src="/slika2024.webp" alt="Voce" />
                 <div className='absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent rounded-md'></div>
                 <div className='absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent rounded-md'></div>
                 <div className='absolute inset-0 bg-gradient-to-l from-white via-transparent to-transparent rounded-md'></div>
                 <div className='absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent rounded-md'></div>
-            </div>
+            </motion.div>
             {/* o nama */}
             <div className='flex lg:flex-row flex-col items-center'>
                 <div className=' flex flex-col items-center p-5 w-[50%] shadow-md shadow-slate-500 m-5'>
                     <h1 className='text-4xl font-bold text-gray-800 font-pisano'>O NAMA</h1>
-                    <p className='text-xl text-gray-600 font-serif text-center mt-5 '>Već godinama radim sa pojedincima svih uzrasta, pomažući im da dostignu ciljeve poput gubitka težine i poboljšanja zdravstvenog stanja. Kroz personalizovane planove ishrane i edukaciju o hrani, pružam alate za trajne promene. Moj pristup je zasnovan na naučnim principima i prilagođen vašim specifičnim potrebama. Dozvolite mi da budem vaš vodič ka zdravijem i srećnijem životu.</p>
-                    <Link className='border-2 border-green-600 p-2 rounded-full mt-2 font-serif font-semibold lg:w-[30%] w-[200px] justify-center flex' to={'onama'}>Više o nama</Link>
+                    <p className='text-xl text-gray-600 font-serif text-center mt-5 w-full '>Već godinama radim sa pojedincima svih uzrasta, pomažući im da dostignu ciljeve poput gubitka težine i poboljšanja zdravstvenog stanja. Kroz personalizovane planove ishrane i edukaciju o hrani, pružam alate za trajne promene.<span className='lg:visible hidden'>Moj pristup je zasnovan na naučnim principima i prilagođen vašim specifičnim potrebama. Dozvolite mi da budem vaš vodič ka zdravijem i srećnijem životu</span>.</p>
+                    <Link className='border-2 border-green-600 p-2 rounded-full mt-2 font-serif font-semibold lg:w-[30%] w-[150px] justify-center flex' to={'onama'}>Više o nama</Link>
                 </div>
                 <motion.div
                     variants={fadeInAnimationVariants}
@@ -62,8 +72,42 @@ function Home() {
                 </div>
             </div>
             {/* zasto kontaktirati nutricionistu */}
-            <div>
+            <div className='flex flex-col lg:flex-row justify-center items-center'>
+                <div className='flex flex-col items-center justify-center p-10'>
+                    <h1 className='text-2xl font-bold text-green-600 font-baskervville m-5 text-center'>Zašto konsultovati nutricionistu?</h1>
+                    <ul className='flex flex-col gap-5 text-center'>
+                        <li>Zato sto je stručan</li>
+                        <li>Zato što dobijate plan ishrane koji je samo za vas i u skladu sa vašim potrebama i zdravstvenim stanjem.</li>
+                        <li>Zato što dobijate jasne smernice koje su neophodne za uvodjenje zdravih životnih navika.</li>
+                        <li>Zato što dobijate recepte za sve obroke iz jelovnika.</li>
+                        <li>Zato što ćete imati konstantnu podršku i kontinuirano praćenje na putu ka cilju gde god da se nalazite.
+                        </li>
+                        <li>Pišite nam i krenimo na put promene.</li>
+                    </ul>
+                </div>
+                <div>
+                    <img className='w-[500px]' src="/gojaznost.webp" alt="Nutri" />
+                </div>
+            </div>
+            {/* Usluge */}
+            <div className='flex flex-col lg:flex-row bg-green-50 w-full h-full p-10 justify-center gap-10'>
+                <div className='flex flex-col justify-center items-center'>
+                    <h1 className='text-7xl font-pisano m-5'>Usluge</h1>
 
+                    <h3 className='lg:text-3xl text-xl'>Pakete koje nudimo su :</h3>
+                    <ol className='list-disc text-xl p-5'>
+                        <li>personalizovane preporuke</li>
+                        <li>personalizovan jelovnik</li>
+                        <li>recepte</li>
+                        <li>online kontrole i praćenje</li>
+                        <li>korekcije jelovnika</li>
+                        <li>preporuke za put</li>
+                    </ol>
+                    <Link className='border-2 border-green-600 p-2 rounded-full font-serif font-semibold w-[150px] justify-center flex' to={'usluge'}>Više...</Link>
+                </div>
+                <div className='p-10 lg:ml-[200px] flex justify-center'>
+                    <img className='w-[350px] h-[550px] rounded-xl shadow-md shadow-slate-400' src="/usluge.webp" alt="UslugeNutri" />
+                </div>
             </div>
         </div>
     );
