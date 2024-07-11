@@ -54,7 +54,17 @@ function Home() {
                 </blockquote>
             </div>
             {/* Komentari */}
-            <Komentari />
+            <div className='w-full relative flex justify-center flex-col items-center'>
+                <div className='absolute inset-0 bg-[url("/profil.webp")] bg-cover bg-center opacity-100'></div>
+                <div className='relative w-full bg-green-600 bg-opacity-45 flex justify-center flex-col items-center p-5'>
+                    <h1 className='text-4xl font-bold text-white font-pisano'>UTISCI O NAMA</h1>
+                    <Komentari />
+                </div>
+            </div>
+            {/* zasto kontaktirati nutricionistu */}
+            <div>
+
+            </div>
         </div>
     );
 }
