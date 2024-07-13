@@ -43,7 +43,7 @@ export default function Komentari() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-white flex flex-col justify-center items-center h-full gap-5'>
-                        <p className='text-xl font-baskervville'>Izuzetno sam zadovoljan saradnjom sa Milicom. Njeno znanje i posvećenost su impresivni. Uz njenu pomoć, naučio sam kako se pravilno hraniti..</p>
+                        <p className='text-xl font-baskervville'>Izuzetno sam zadovoljan saradnjom sa Milicom.Uz njenu pomoć, naučio sam kako se pravilno hraniti, i odrzavati kilazu.</p>
                         <hr className='text-white w-[60%]' />
                         <h2 className='text-3xl font-baskervville'>Marko</h2>
                     </div>

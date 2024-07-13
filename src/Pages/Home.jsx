@@ -41,10 +41,14 @@ function Home() {
             </motion.div>
             {/* o nama */}
             <div className='flex lg:flex-row flex-col items-center'>
-                <div className=' flex flex-col items-center p-5 w-[50%] shadow-md shadow-slate-500 m-5'>
-                    <h1 className='text-4xl font-bold text-gray-800 font-pisano'>O NAMA</h1>
-                    <p className='text-xl text-gray-600 font-serif text-center mt-5 w-full '>Već godinama radim sa pojedincima svih uzrasta, pomažući im da dostignu ciljeve poput gubitka težine i poboljšanja zdravstvenog stanja. Kroz personalizovane planove ishrane i edukaciju o hrani, pružam alate za trajne promene.<span className='lg:visible hidden'>Moj pristup je zasnovan na naučnim principima i prilagođen vašim specifičnim potrebama. Dozvolite mi da budem vaš vodič ka zdravijem i srećnijem životu</span>.</p>
-                    <Link className='border-2 border-green-600 p-2 rounded-full mt-2 font-serif font-semibold lg:w-[30%] w-[150px] justify-center flex' to={'onama'}>Više o nama</Link>
+                <div className=' flex flex-col items-center p-5 w-[50%] shadow-md shadow-slate-500 m-5 bg-green-100'>
+                    <h1 className='text-4xl font-bold text-gray-800 font-pisano'>Vaš Uspeh, Moja Misija</h1>
+                    <ol className='list-disc text-xl p-5 font-serif'>
+                        <li>Sa velikom posvećenošću pristupam svakom pojedincu kako bismo zajedno ostvarili što bolje rezultate.</li>
+                        <li>Vaš uspeh je i moj uspeh.</li>
+                        <li>Individualni pristup, podrška i edukacija svakog pojedinca je moj put ka vašem zdravlju.</li>
+                    </ol>
+                    <Link className='border-2 border-green-600 p-2 rounded-full mt-2 font-serif font-semibold lg:w-[30%] w-[150px] justify-center flex' to={'onama'}>Više o meni</Link>
                 </div>
                 <motion.div
                     variants={fadeInAnimationVariants}
@@ -67,7 +71,7 @@ function Home() {
             <div className='w-full relative flex justify-center flex-col items-center'>
                 <div className='absolute inset-0 bg-[url("/profil.webp")] bg-cover bg-center opacity-100'></div>
                 <div className='relative w-full bg-green-600 bg-opacity-45 flex justify-center flex-col items-center p-5'>
-                    <h1 className='text-4xl font-bold text-white font-pisano'>UTISCI O NAMA</h1>
+                    <h1 className='text-4xl font-bold text-white font-pisano'>UTISCI O MENI</h1>
                     <Komentari />
                 </div>
             </div>
@@ -76,13 +80,13 @@ function Home() {
                 <div className='flex flex-col items-center justify-center p-10'>
                     <h1 className='text-2xl font-bold text-green-600 font-baskervville m-5 text-center'>Zašto konsultovati nutricionistu?</h1>
                     <ul className='flex flex-col gap-5 text-center'>
-                        <li>Zato sto je stručan</li>
+
                         <li>Zato što dobijate plan ishrane koji je samo za vas i u skladu sa vašim potrebama i zdravstvenim stanjem.</li>
                         <li>Zato što dobijate jasne smernice koje su neophodne za uvodjenje zdravih životnih navika.</li>
                         <li>Zato što dobijate recepte za sve obroke iz jelovnika.</li>
                         <li>Zato što ćete imati konstantnu podršku i kontinuirano praćenje na putu ka cilju gde god da se nalazite.
                         </li>
-                        <li>Pišite nam i krenimo na put promene.</li>
+                        <li>Pišite mi i krenimo na put promene.</li>
                     </ul>
                 </div>
                 <div>
@@ -90,24 +94,29 @@ function Home() {
                 </div>
             </div>
             {/* Usluge */}
-            <div className='flex flex-col lg:flex-row bg-green-50 w-full h-full p-10 justify-center gap-10'>
+            <div className='flex flex-col lg:flex-row bg-green-50 w-full h-full p-10 justify-center gap-10 items-center'>
                 <div className='flex flex-col justify-center items-center'>
-                    <h1 className='text-7xl font-pisano m-5'>Usluge</h1>
-
-                    <h3 className='lg:text-3xl text-xl'>Pakete koje nudimo su :</h3>
+                    <h1 className='text-7xl font-pisano m-5'>Milica Dzelebdzić</h1>
+                    <hr className='border border-green-600 w-[80%] m-5' />
                     <ol className='list-disc text-xl p-5'>
-                        <li>personalizovane preporuke</li>
-                        <li>personalizovan jelovnik</li>
-                        <li>recepte</li>
-                        <li>online kontrole i praćenje</li>
-                        <li>korekcije jelovnika</li>
-                        <li>preporuke za put</li>
+
+                        <li>Personalizovane preporuke</li>
+                        <li>Personalizovan jelovnik</li>
+                        <li>Recepte</li>
+                        <li>Online kontrole i praćenje</li>
+                        <li>Korekcije jelovnika</li>
+                        <li>Preporuke za put</li>
                     </ol>
                     <Link className='border-2 border-green-600 p-2 rounded-full font-serif font-semibold w-[150px] justify-center flex' to={'usluge'}>Više...</Link>
                 </div>
-                <div className='p-10 lg:ml-[200px] flex justify-center'>
-                    <img className='w-[350px] h-[550px] rounded-xl shadow-md shadow-slate-400' src="/usluge.webp" alt="UslugeNutri" />
+                <div className="p-10 lg:ml-[200px] flex justify-center  lg:ml-0 relative overflow-hidden w-[350px] h-[500px] rounded-md shadow-md shadow-slate-400 ">
+                    <img
+                        className="absolute top-0 left-0 w-full h-full transition-transform duration-[8000ms] transform-gpu hover:scale-150 object-cover"
+                        src="/casa.webp"
+                        alt="UslugeNutri"
+                    />
                 </div>
+
             </div>
         </div>
     );

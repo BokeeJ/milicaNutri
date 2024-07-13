@@ -7,7 +7,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Pages/Home.jsx'
 import Onama from './Pages/Onama.jsx'
 import Usluge from './Pages/Usluge.jsx'
-import Transformacija from './Pages/Transformacija.jsx'
 import Utisci from './Pages/Utisci.jsx'
 import Kontakt from './Pages/Kontakt.jsx'
 import PageNotFound from './Pages/Error.jsx'
@@ -29,10 +28,7 @@ const router = createBrowserRouter([
         path: 'usluge',
         element: <Usluge />
       },
-      {
-        path: 'transformacija',
-        element: <Transformacija />
-      },
+
       {
         path: 'utisci',
         element: <Utisci />
