@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@eslint/config-array": "^0.17.0",
     "@eslint/object-schema": "^2.1.4",
+    "axios": "^1.7.2",
     "framer-motion": "^11.3.0",
     "glob": "^10.4.3",
     "lru-cache": "^10.4.0",

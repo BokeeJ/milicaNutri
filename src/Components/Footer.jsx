@@ -8,7 +8,7 @@ import { IoLogoTiktok } from "react-icons/io5";
 
 function Footer() {
     return (
-        <div className='w-full h-full justify-between flex p-5 items-center lg:flex-row flex-col'>
+        <div className='w-full h-full justify-between flex p-5 items-center lg:flex-row flex-col border-t-2 border-green-600 '>
             {/* Logo */}
             <div className='flex flex-col items-center'>
                 <h1 className='lg:text-xl  font-medium  text-gray-800 font-baskervville'>NU<span className='text-green-600 font-extrabold text-4xl  m-1'>T</span>RICIJA ZA <span className='text-green-600 font-extrabold text-4xl '>T</span>RIJUMF</h1>
