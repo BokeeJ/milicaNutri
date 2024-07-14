@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 function Usluge() {
     return (
         <div className='flex flex-col justify-center items-center m-5'>
@@ -8,7 +9,7 @@ function Usluge() {
             <hr className='border border-green-600 w-[80%]' />
             <div>
                 <div className='flex flex-col items-center p-5'>
-                    <h2 className='text-green-600 text-3xl font-baskervville m-5'>šta podrazumeva nutricionisticki pregled</h2>
+                    <h2 className='text-green-600 text-3xl font-baskervville m-5'>šta podrazumeva nutricionistički pregled?</h2>
                     <ul className='text-xl font-baskervville list-disc'>
                         <li>merenje na specijalno nutricionistickoj vagi.</li>
                         <li>trudnice i osobe sa bajpasom mere se na obicnoj vagi.</li>
@@ -20,13 +21,13 @@ function Usluge() {
                         <li>predlog odgovarajuće suplementacije</li>
                         <li><span className='text-green-600 text-2xl font-bold'>podršku da istrajete</span></li>
                         <li className='mt-5 list-none'>
-                            <Link to={'kontakt'} className='font-extrabold text-2xl text-green-600 border-2 border-black rounded-2xl p-3 font-baskervville'>zakažite svoj pregled</Link>
+                            <Link to={'/kontakt'} className='text-xl transform ease-in-out transition-colors duration-300 font-baskervville font-bold border-2 hover:bg-green-200 border-green-600 p-2 rounded-lg' >zakažite pregled</Link>
                         </li>
                     </ul>
                 </div>
                 <div className='flex lg:flex-row flex-col'>
                     <div className='flex flex-col items-center p-5'>
-                        <h2 className='text-green-600 text-3xl font-baskervville m-5'>kome je potreban nutricionisticki pregled?</h2>
+                        <h2 className='text-green-600 text-3xl font-baskervville m-5'>kome je potreban nutričionisticki pregled?</h2>
                         <ul className='text-xl font-baskervville list-disc'>
                             <li>zdravim osobama ili osobama koje zele da detoksikuju svoj organizam.</li>
                             <li>osobama sa viškom kilograma.</li>
@@ -43,7 +44,9 @@ function Usluge() {
                     </div>
                     <img src="KomentarSlika.webp" className='lg:w-[50%] ' alt="Nutrition" />
                 </div>
-                <div></div>
+                <div>
+
+                </div>
             </div>
 
         </div >
