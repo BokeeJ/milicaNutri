@@ -47,13 +47,13 @@ function Mail2() {
                     once: true,
                 }}
                 className='lg:w-[500px] h-full w-[80%] bg-green-600 rounded-2xl opacity-80 md:w-full'>
-                <h1 className='text-white font-baskervville text-4xl text-center p-10'>Zakazite pregled</h1>
+                <h1 className='text-white font-baskervville text-4xl text-center p-10'>Zakažite pregled</h1>
                 <form className='flex flex-col gap-5  p-10' ref={form} onSubmit={sendEmail}>
                     <input className='text-xl h-10 p-4 rounded-xl' placeholder='Ime' type="text" name="user_name" />
                     <input className='text-xl h-10 p-4 rounded-xl' placeholder='E-mail' type="email" name="user_email" />
                     <input className='text-xl h-10 p-4 rounded-xl' placeholder='Telefon' type='tel' name="number" />
                     <textarea className='w-full h-[120px] text-xl p-4 rounded-xl' placeholder='Poruka...' name="message" />
-                    <button className='text-2xl text-white border-white border-2 rounded-3xl p-3 font-bold font-baskervville' type="submit" value="Send">Send</button>
+                    <button className='text-2xl text-white border-white border-2 rounded-3xl p-3 font-bold font-baskervville' type="submit" value="Send">pošalji</button>
                 </form>
             </motion.div>
         </div>

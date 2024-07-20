@@ -51,7 +51,7 @@ function Navbar() {
                         </motion.div>
                     </Link>
                     <div className='flex gap-1 right-10 absolute'>
-                        <div className='lg:visible invisible flex cursor-pointer'>
+                        <div className='lg:visible invisible flex cursor-pointer gap-3'>
                             <a href='https://www.instagram.com/dijeteticarka_/' target='_blank' rel='noopener noreferrer'>
                                 <LuInstagram size={35} color='green' />
                             </a>
@@ -78,10 +78,9 @@ function Navbar() {
                 <div className={`fixed top-0 left-0 w-full h-full z-50 bg-green-600 shadow-xl p-2 transition-transform duration-1000 ease-in-out text-center opacity-90 ${menu ? 'translate-x-0' : '-translate-x-full'} lg:hidden`}>
                     <button className='text-black text-3xl absolute right-10' onClick={handleClose}>X</button>
                     <ul className='text-l flex flex-col gap-2 font-bold cursor-pointer text-gray-800 p-10 h-full'>
-                        <Link to={'/'} onClick={handleClose}>POCETNA</Link>
+                        <Link to={'/'} onClick={handleClose}>POČETNA</Link>
                         <Link to={'onama'} onClick={handleClose} >O MENI</Link>
                         <Link to={'usluge'} onClick={handleClose} >USLUGE</Link>
-
                         <Link to={'utisci'} onClick={handleClose} >UTISCI</Link>
                         <Link to={'kontakt'} onClick={handleClose}>KONTAKT</Link>
                     </ul>
@@ -89,7 +88,7 @@ function Navbar() {
 
                 {/* Meni za desktop */}
                 <ul className='hidden lg:flex lg:flex-row lg:gap-10 text-l font-medium cursor-pointer text-gray-800 p-5'>
-                    <NavLink to={'/'} className='transition-all duration-500 ease-in-out hover:font-extrabold'>POCETNA</NavLink>
+                    <NavLink to={'/'} className='transition-all duration-500 ease-in-out hover:font-extrabold'>POČETNA</NavLink>
                     <NavLink to={'onama'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>O MENI</NavLink>
                     <NavLink to={'usluge'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>USLUGE</NavLink>
                     <NavLink to={'utisci'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>UTISCI</NavLink>

@@ -5,4 +5,5 @@
 .active {
 	@apply text-green-600;
 	@apply font-extrabold;
+	@apply text-[20px];
 }

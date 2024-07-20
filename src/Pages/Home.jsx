@@ -97,7 +97,7 @@ function Home() {
             <div className='flex flex-col lg:flex-row bg-green-50 w-full h-full p-10 justify-center gap-10 items-center'>
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='text-7xl font-pisano m-5'>Milica Dzelebdzić</h1>
-                    <h3 className='text-3xl font-baskervville m-5'>viši dijeteticar nutricionista</h3>
+                    <h3 className='text-3xl font-baskervville m-5'>viši dijetetičar nutricionista</h3>
                     <hr className='border border-green-600 w-[80%] m-5' />
                     <ol className='list-disc text-xl p-5'>
 
@@ -113,7 +113,7 @@ function Home() {
                 <div className="p-10 lg:ml-[200px] flex justify-center  relative overflow-hidden w-[350px] h-[500px] rounded-md shadow-md shadow-slate-400 ">
                     <img
                         className="absolute top-0 left-0 w-full h-full transition-transform duration-[8000ms] transform-gpu hover:scale-150 object-cover"
-                        src="/casa.webp"
+                        src="/6.webp"
                         alt="UslugeNutri"
                     />
                 </div>
