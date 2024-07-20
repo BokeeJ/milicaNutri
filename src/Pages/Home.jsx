@@ -23,7 +23,7 @@ function Home() {
         <div className='flex justify-center flex-col items-center'>
             {/* slika */}
             <motion.div
-                className='relative box lg:w-[900px] md:w-[500px] w-[360px] h-[400px]'
+                className='relative box lg:w-[900px] md:w-[500px] w-[480px] h-[400px]'
 
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -41,7 +41,7 @@ function Home() {
             </motion.div>
             {/* o nama */}
             <div className='flex lg:flex-row flex-col items-center'>
-                <div className=' flex flex-col items-center p-5 w-[50%] shadow-md shadow-slate-500 m-5 bg-green-100'>
+                <div className=' flex flex-col items-center p-5 lg:w-[50%] shadow-md shadow-slate-500 m-5 bg-green-100'>
                     <h1 className='text-4xl font-bold text-gray-800 font-pisano'>Vaš Uspeh, Moja Misija</h1>
                     <ol className='list-disc text-xl p-5 font-serif'>
                         <li>Sa velikom posvećenošću pristupam svakom pojedincu kako bismo zajedno ostvarili što bolje rezultate.</li>
