@@ -30,7 +30,7 @@ function Onama() {
                     </p>
                 </div>
                 <div className='lg:w-[50%] flex justify-center items-center flex-col'>
-                    <img src="/o meni.webp" className='w-[400px] h-[400px] shadow-xl shadow-slate-500' alt="Milica Dzelebdzic" />
+                    <img src="/gojaznost.webp" className='w-[400px] h-[400px]' alt="Milica Dzelebdzic" />
                     <h1 className='m-2 text-4xl font-baskervville'>Milica Dzelebdzić</h1>
                     <h2 className='font-baskervville text-2xl'>viši dijetetičar nutricionista</h2>
                 </div>

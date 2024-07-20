@@ -89,8 +89,8 @@ function Home() {
                         <li>Pišite mi i krenimo na put promene.</li>
                     </ul>
                 </div>
-                <div>
-                    <img className='w-[500px]' src="/gojaznost.webp" alt="Nutri" />
+                <div className='p-5'>
+                    <img className='w-[400px] h-[450px] p-5 shadow-md shadow-green-200 rounded-xl' src="/4.webp" alt="Milica Dzelebdzic" />
                 </div>
             </div>
             {/* Usluge */}
