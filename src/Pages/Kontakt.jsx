@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 // icons
 import { MdOutlineMailOutline } from "react-icons/md";
 import { LuFacebook } from "react-icons/lu";
@@ -13,7 +14,16 @@ import Mail2 from '../Components/Mail2.jsx'
 function Kontakt() {
     const emailAdresa = 'milica.nutricionista@yahoo.com'
     return (
-        <div className='flex flex-col'>
+        <motion.div
+
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01]
+            }}
+            className='flex flex-col box'>
             <div className='flex lg:flex-row flex-col justify-center items-center'>
                 <div className='flex flex-col  gap-3 p-10'>
                     <h1 className='text-6xl font-pisano'>Kontakt</h1>
@@ -59,7 +69,7 @@ function Kontakt() {
                     loading="lazy"
                 ></iframe>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

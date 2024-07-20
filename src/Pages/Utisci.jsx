@@ -2,7 +2,7 @@ import React from 'react'
 
 function Utisci() {
     return (
-        <div className='p-10'>
+        <div className='p-10 m-10'>
             <div className='flex justify-center items-center flex-col'>
                 <h1 className='text-black m-5 text-6xl font-pisano'>Utisci</h1>
                 <hr className='border border-green-600 w-[80%]' />

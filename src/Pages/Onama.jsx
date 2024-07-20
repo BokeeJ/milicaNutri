@@ -1,10 +1,19 @@
 import React from 'react'
 import Gallery from '../Components/Gallery'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 function Onama() {
     return (
-        <div className='flex flex-col items-center'>
+        <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01]
+            }}
+            className='flex flex-col items-center box'>
             <div className='m-5 p-5'>
                 <h1 className='text-6xl font-pisano'>O meni</h1>
                 <hr className='border-green-600 border w-[300px] mt-4' />
@@ -38,7 +47,7 @@ function Onama() {
             <div>
                 <Gallery />
             </div>
-        </div>
+        </motion.div>
     )
 }
 

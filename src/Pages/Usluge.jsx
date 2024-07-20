@@ -1,10 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 
 function Usluge() {
     return (
-        <div className='flex flex-col justify-center items-center m-5'>
+        <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01]
+            }}
+            className='flex flex-col justify-center items-center m-5 box'>
             <h1 className='text-black m-5 text-6xl font-pisano'>Usluge</h1>
             <hr className='border border-green-600 w-[80%]' />
             <div>
@@ -49,7 +58,7 @@ function Usluge() {
                 </div>
             </div>
 
-        </div >
+        </motion.div >
     )
 }
 

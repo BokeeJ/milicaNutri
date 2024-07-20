@@ -34,17 +34,13 @@ function Navbar() {
             <div className='flex flex-col items-center w-full'>
                 <div className='flex items-center'>
                     <Link to={'/'}>
-                        <motion.div animate={{
-                            scale: [1, 1.3, 1.3, 1, 1],
-                            rotate: [0, 0, 180, 180, 0],
-                            borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-                        }}
+                        <motion.div className="box"
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            animate={{ opacity: 1, scale: 1 }}
                             transition={{
-                                duration: 2,
-                                ease: "easeInOut",
-                                times: [0, 0.2, 0.5, 0.8, 1],
-                                repeat: Infinity,
-                                repeatDelay: 1
+                                duration: 0.8,
+                                delay: 0.5,
+                                ease: [0, 0.71, 0.2, 1.01]
                             }} >
 
                             <img className='w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] mt-5' src="/1.webp" alt="logo" />

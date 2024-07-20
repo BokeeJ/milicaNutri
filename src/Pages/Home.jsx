@@ -20,10 +20,18 @@ function Home() {
         }
     }
     return (
-        <div className='flex justify-center flex-col items-center'>
+        <motion.div
+
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01]
+            }} className='flex box justify-center flex-col items-center'>
             {/* slika */}
             <motion.div
-                className='relative box lg:w-[900px] md:w-[500px] w-[480px] h-[400px]'
+                className='relative box lg:w-[900px] md:w-[500px] w-full h-[400px]'
 
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -119,7 +127,7 @@ function Home() {
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     );
 }
 

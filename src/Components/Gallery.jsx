@@ -4,13 +4,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
+import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
 
 import '../swiper.style.css';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCube, Pagination } from 'swiper/modules';
 
 
 function Gallery() {
@@ -23,20 +23,17 @@ function Gallery() {
             <div className='lg:w-[50%] flex justify-center p-5 '>
                 <>
                     <Swiper
-                        effect={'coverflow'}
+                        effect={'cube'}
                         grabCursor={true}
-                        centeredSlides={true}
-                        slidesPerView={'auto'}
-                        coverflowEffect={{
-                            rotate: 50,
-                            stretch: 0,
-                            depth: 100,
-                            modifier: 1,
+                        cubeEffect={{
+                            shadow: true,
                             slideShadows: true,
+                            shadowOffset: 20,
+                            shadowScale: 0.94,
                         }}
-                        pagination={false}
-                        modules={[EffectCoverflow, Pagination]}
-                        className="mySwiper rounded-2xl"
+                        pagination={true}
+                        modules={[EffectCube, Pagination]}
+                        className="mySwiper"
                     >
                         <SwiperSlide>
                             <img src="/2.webp" alt='Slika1' />
