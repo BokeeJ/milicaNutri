@@ -75,14 +75,9 @@ function Home() {
                     </blockquote>
                 </div>
                 {/* Komentari */}
-                <div className='relative flex justify-center flex-col items-center h-full w-full'>
-                    <div className='absolute inset-0 bg-[url("/profil.webp")] bg-cover bg-center opacity-75'></div>
-                    <div className='relative z-10 flex flex-col items-center bg-green-600 bg-opacity-75 p-5'>
-                        <h1 className='text-4xl font-bold text-white font-pisano'>UTISCI O MENI</h1>
-                        <div>
-                            <Komentari />
-                        </div>
-                    </div>
+                <div className='relative flex justify-center flex-col items-center h-[400px] w-full'>
+                    <div className='absolute inset-0 bg-[url("/profil.webp")] bg-cover bg-center opacity-80'></div>
+                    <Komentari />
                 </div>
 
                 {/* zasto kontaktirati nutricionistu */}

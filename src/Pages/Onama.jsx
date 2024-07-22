@@ -45,7 +45,7 @@ function Onama() {
                 </div>
             </div>
             <div>
-                <Gallery />
+
             </div>
         </motion.div>
     )

@@ -1,0 +1,30 @@
+/* Prilagodi CSS kako bi osigurao da Swiper zauzima celu širinu i visinu ekrana */
+
+#app {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.swiper {
+	width: 100vw; /* Zauzima celu širinu vidljivog dela ekrana */
+	height: 100vh; /* Zauzima celu visinu vidljivog dela ekrana */
+	box-sizing: border-box;
+}
+
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw; /* Širina slajda je 100% širine vidljivog dela ekrana */
+	height: 100%; /* Visina slajdova se prilagođava visini Swiper-a */
+	background-color: rgba(0, 0, 0, 0.3); /* Providna pozadina */
+	color: #fff; /* Boja teksta */
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
