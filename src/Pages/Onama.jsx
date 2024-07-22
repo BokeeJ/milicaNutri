@@ -13,7 +13,7 @@ function Onama() {
                 delay: 0.5,
                 ease: [0, 0.71, 0.2, 1.01]
             }}
-            className='flex flex-col items-center box'>
+            className='flex flex-col items-center'>
             <div className='m-5 p-5'>
                 <h1 className='text-6xl font-pisano'>O meni</h1>
                 <hr className='border-green-600 border w-[300px] mt-4' />
@@ -44,8 +44,8 @@ function Onama() {
                     <h2 className='font-baskervville text-2xl'>viši dijetetičar nutricionista</h2>
                 </div>
             </div>
-            <div>
-
+            <div className='p-5'>
+                <Gallery />
             </div>
         </motion.div>
     )
