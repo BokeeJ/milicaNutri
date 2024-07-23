@@ -43,7 +43,7 @@ function Navbar() {
                                 ease: [0, 0.71, 0.2, 1.01]
                             }} >
 
-                            <img className='w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] mt-5' src="/1.webp" alt="logo" />
+                            <img className='w-[150px] h-[150px] lg:w-[450px] lg:h-[450px] mt-2' src="/logo2024.webp" alt="logo" />
                         </motion.div>
                     </Link>
                     <div className='flex gap-1 right-10 absolute'>

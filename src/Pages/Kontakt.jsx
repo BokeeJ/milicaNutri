@@ -49,7 +49,7 @@ function Kontakt() {
                     <Mail2 />
                 </div>
             </div>
-            <div div className='flex justify-center items-center flex-col p-5' >
+            <div className='flex justify-center items-center flex-col p-5' >
                 <h2 className='text-6xl font-pisano p-5'>Adresa</h2>
                 <hr className='border border-green-600 w-[80%] ' />
             </div >

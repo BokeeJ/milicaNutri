@@ -12,7 +12,7 @@ function Footer() {
             {/* Logo */}
             <div className='flex flex-col items-center'>
                 <h1 className='lg:text-xl  font-medium  text-gray-800 font-baskervville'>NU<span className='text-green-600 font-extrabold text-4xl  m-1'>T</span>RICIJA ZA <span className='text-green-600 font-extrabold text-4xl '>T</span>RIJUMF</h1>
-                <img src="/1.webp" alt="logo" className='w-[100px] h-[100px]' />
+                <img src="/logo2024.webp" alt="logo" className='w-[100px] h-[100px]' />
             </div>
             {/* Mini meni */}
 
