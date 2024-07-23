@@ -20,11 +20,11 @@ function Usluge() {
                 <div className='flex flex-col items-center p-5'>
                     <h2 className='text-green-600 text-3xl font-baskervville m-5'>šta podrazumeva nutricionistički pregled?</h2>
                     <ul className='text-xl font-baskervville list-disc'>
-                        <li>merenje na specijalno nutricionistickoj vagi</li>
+                        <li>merenje na specijalnoj nutricionistickoj vagi</li>
                         <li>trudnice i osobe sa bajpasom mere se na obicnoj vagi</li>
                         <li>merenje visine i debljine potkoznog masnog tkiva</li>
-                        <li>anamneza koja se uzima kroz razgovor sa pacijentom o eventualnim oboljenjima i terapijama ukoliko postoji</li>
-                        <li>pacijent sa sobom nosi svu medicinsku dokumentaciju i labaratoriju, ne stariju od 3 meseca</li>
+                        <li>anamneza koja se uzima kroz razgovor sa pacijentom o eventualnim oboljenjima i terapijama ukoliko postoje</li>
+                        <li>pacijent sa sobom nosi svu medicinsku dokumentaciju i laboratoriju, ne stariju od 3 meseca</li>
                         <li>2-3 sata pre pregleda ne uzimati hranu, a tecnost svesti na minimum</li>
                         <li>izradu individualnog dijetetsko-higijenskog rezima ishrane, plana ishrane, koji dobijate na mail</li>
                         <li>predlog odgovarajuće suplementacije</li>
@@ -36,7 +36,7 @@ function Usluge() {
                 </div>
                 <div className='flex lg:flex-row flex-col'>
                     <div className='flex flex-col items-center p-5'>
-                        <h2 className='text-green-600 text-3xl font-baskervville m-5'>kome je potreban nutričionisticki pregled?</h2>
+                        <h2 className='text-green-600 text-3xl font-baskervville m-5'>kome je potreban nutricionistički pregled?</h2>
                         <ul className='text-xl font-baskervville list-disc'>
                             <li>zdravim osobama ili osobama koje zele da detoksikuju svoj organizam</li>
                             <li>osobama sa viškom kilograma</li>
