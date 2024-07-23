@@ -43,6 +43,21 @@ export default function App() {
                 <SwiperSlide>
                     <img src="/6.webp" />
                 </SwiperSlide>
+                <SwiperSlide>
+                    <img src="/a.webp" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src="/b.webp" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src="/c.webp" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src="/d.webp" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src="/e.webp" />
+                </SwiperSlide>
 
             </Swiper>
         </>

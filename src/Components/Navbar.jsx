@@ -83,7 +83,7 @@ function Navbar() {
                 </div>
 
                 {/* Meni za desktop */}
-                <ul className='hidden lg:flex lg:flex-row lg:gap-10 text-l font-medium cursor-pointer text-gray-800 p-5'>
+                <ul className='hidden lg:flex lg:flex-row lg:gap-10 text-l font-bold font-pisano cursor-pointer text-gray-800 p-5'>
                     <NavLink to={'/'} className='transition-all duration-500 ease-in-out hover:font-extrabold'>POČETNA</NavLink>
                     <NavLink to={'onama'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>O MENI</NavLink>
                     <NavLink to={'usluge'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>USLUGE</NavLink>

@@ -40,7 +40,7 @@ function Home() {
                         ease: [0, 0.71, 0.2, 1.01]
                     }}
                 >
-                    <img className='w-full h-full rounded-md' src="/slika2024.webp" alt="Voce" />
+                    <img className='w-full h-full rounded-md' src="/d.webp" alt="Voce" />
                     <div className='absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent rounded-md'></div>
                     <div className='absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent rounded-md'></div>
                     <div className='absolute inset-0 bg-gradient-to-l from-white via-transparent to-transparent rounded-md'></div>
@@ -76,7 +76,10 @@ function Home() {
                 </div>
                 {/* Komentari */}
                 <div className='relative flex justify-center flex-col items-center h-[400px] w-full'>
-                    <div className='absolute inset-0 bg-[url("/profil.webp")] bg-cover bg-center opacity-80'></div>
+                    <div className='absolute inset-0 bg-[url("/profil.webp")] bg-cover bg-center opacity-90'></div>
+                    <div className='absolute inset-0 bg-gradient-to-l from-white via-transparent to-transparent rounded-md'></div>
+                    <div className='absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent rounded-md'></div>
+
                     <Komentari />
                 </div>
 
@@ -84,7 +87,7 @@ function Home() {
                 <div className='flex flex-col lg:flex-row justify-center items-center'>
                     <div className='flex flex-col items-center justify-center p-10'>
                         <h1 className='text-2xl font-bold text-green-600 font-baskervville m-5 text-center'>Zašto konsultovati nutricionistu?</h1>
-                        <ul className='flex flex-col gap-5 text-center'>
+                        <ul className='flex flex-col gap-5 text-center font-baskervville font-bold lg:text-xl md:text-xl'>
                             <li>Zato što dobijate plan ishrane koji je samo za vas i u skladu sa vašim potrebama i zdravstvenim stanjem.</li>
                             <li>Zato što dobijate jasne smernice koje su neophodne za uvodjenje zdravih životnih navika.</li>
                             <li>Zato što dobijate recepte za sve obroke iz jelovnika.</li>

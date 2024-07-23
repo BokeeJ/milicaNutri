@@ -24,7 +24,9 @@ function Kontakt() {
                 ease: [0, 0.71, 0.2, 1.01]
             }}
             className='flex flex-col box'>
+
             <div className='flex lg:flex-row flex-col justify-center items-center'>
+
                 <div className='flex flex-col  gap-3 p-10'>
                     <h1 className='text-6xl font-pisano'>Kontakt</h1>
                     <hr className='border-green-600 border w-[300px]' />

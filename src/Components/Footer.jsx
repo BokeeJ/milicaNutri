@@ -17,7 +17,7 @@ function Footer() {
             {/* Mini meni */}
 
             <div className=' border '>
-                <ul className='flex gap-3 lg:flex-row flex-col text-center shadow-lg p-5 font-medium'>
+                <ul className='flex gap-3 lg:flex-row flex-col text-center shadow-lg p-5 font-medium font-pisano'>
                     <NavLink to={'/'} className='transition-all duration-500 ease-in-out hover:font-extrabold'>POČETNA</NavLink>
                     <NavLink to={'onama'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>O MENI</NavLink>
                     <NavLink to={'usluge'} className='transition-all duration-500 ease-in-out  hover:font-extrabold'>USLUGE</NavLink>

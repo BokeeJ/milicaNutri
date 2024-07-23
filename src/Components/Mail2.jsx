@@ -47,7 +47,7 @@ function Mail2() {
                     once: true,
                 }}
                 className='lg:w-[500px] h-full w-[80%] bg-green-600 rounded-2xl opacity-80 md:w-full'>
-                <h1 className='text-white font-baskervville text-4xl text-center p-10'>Zakažite pregled</h1>
+                <h2 className='text-white font-baskervville text-4xl text-center p-10'>Zakažite pregled</h2>
                 <form className='flex flex-col gap-5  p-10' ref={form} onSubmit={sendEmail}>
                     <input className='text-xl h-10 p-4 rounded-xl' placeholder='Ime' type="text" name="user_name" />
                     <input className='text-xl h-10 p-4 rounded-xl' placeholder='E-mail' type="email" name="user_email" />
