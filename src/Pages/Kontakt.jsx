@@ -27,7 +27,7 @@ function Kontakt() {
 
             <div className='flex lg:flex-row flex-col justify-center items-center'>
 
-                <div className='flex flex-col  gap-3 p-10'>
+                <div className='flex flex-col  gap-3 p-5'>
                     <h1 className='text-6xl font-pisano'>Kontakt</h1>
                     <hr className='border-green-600 border w-[300px]' />
                     <a href="tel:+38162287330" className='text-black text-l font-serif flex items-center font-semibold gap-4'><FaPhone size={35} color='green' />Telefon</a>
@@ -44,14 +44,15 @@ function Kontakt() {
                     <a href='' className='text-black text-l font-serif flex items-center font-semibold gap-4'><IoLogoTiktok size={35} color='green' />TikTok</a>
 
                 </div>
+
                 <div className='flex justify-center items-center'>
                     <Mail2 />
                 </div>
             </div>
-            <div className='flex justify-center items-center flex-col p-5'>
+            <div div className='flex justify-center items-center flex-col p-5' >
                 <h2 className='text-6xl font-pisano p-5'>Adresa</h2>
                 <hr className='border border-green-600 w-[80%] ' />
-            </div>
+            </div >
 
             <div className='flex justify-center p-5 flex-col items-center'>
                 <div className='border-2 border-green-600 p-5 m-2 shadow-md shadow-transparent'>
@@ -71,7 +72,7 @@ function Kontakt() {
                     loading="lazy"
                 ></iframe>
             </div>
-        </motion.div>
+        </motion.div >
     )
 }
 

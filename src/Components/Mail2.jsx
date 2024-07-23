@@ -38,7 +38,7 @@ function Mail2() {
             );
     };
     return (
-        <div className='p-10 flex justify-center items-center'>
+        <div className='p-2 flex justify-center items-center'>
             <motion.div
                 variants={fadeInAnimationVariants}
                 initial='initial'
