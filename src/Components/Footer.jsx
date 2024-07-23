@@ -34,8 +34,9 @@ function Footer() {
                 <a href='https://sr-rs.facebook.com/milica.dzelebdzic.5' target='_blank' rel='noopener noreferrer'>
                     <LuFacebook size={35} color='green' />
                 </a>
-
-                <IoLogoTiktok size={35} color='green' />
+                <a href='https://www.tiktok.com/@dijeteticarka_' target='_blank' rel='noopener noreferrer'>
+                    <IoLogoTiktok size={35} color='green' />
+                </a>
             </div>
         </div>
     )

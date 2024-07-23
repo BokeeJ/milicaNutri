@@ -27,11 +27,11 @@ function Onama() {
                         Šta ako vam kažem da možete da jedete ukusne namirnice, a da izgledate vitko, osećate se zdravo i budete zdravi?<br />
                         <br />
 
-                        Gajim veliku ljubav prema zdravoj ishrani i velika želja da zajedno stvaramo i delimo svoje znanje.
+                        Posvećena sam  zdravom stilu života i sa velikim entuzijazmom ću i vama biti podrška na putu promene.
                         <br />
                         <br />
 
-                        Na osnovu opšte i nutritivne anamneze radim izradu personalizovanog jelovnika, prilagodjenog pojedincu i njegovom zdravstvenom stanju. Uz moje praćenje i podršku, dolazimo do vaših željenih rezultata, trajnih promena navika, a što je najvažnije na potpuno zdrav način.
+                        Na osnovu opšte i nutritivne anamneze radim izradu personalizovanog jelovnika, prilagodjenog pojedincu i njegovom zdravstvenom stanju. Uz moje praćenje i podršku, dolazimo do vaših željenih rezultata, trajnih promena prehrambenih navika.
                         <br />
                         <br />
 

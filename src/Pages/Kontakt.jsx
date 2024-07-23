@@ -41,7 +41,7 @@ function Kontakt() {
                         <LuFacebook size={35} color='green' />Facebook
                     </a>
 
-                    <a href='' className='text-black text-l font-serif flex items-center font-semibold gap-4'><IoLogoTiktok size={35} color='green' />TikTok</a>
+                    <a href='https://www.tiktok.com/@dijeteticarka_' className='text-black text-l font-serif flex items-center font-semibold gap-4'><IoLogoTiktok size={35} color='green' />TikTok</a>
 
                 </div>
 

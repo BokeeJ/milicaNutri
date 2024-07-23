@@ -50,10 +50,10 @@ function Home() {
                 <div className='flex lg:flex-row flex-col items-center'>
                     <div className=' flex flex-col items-center p-5 lg:w-[50%] shadow-md shadow-slate-500 m-5 bg-green-100'>
                         <h1 className='text-4xl font-bold text-gray-800 font-pisano'>Vaš Uspeh, Moja Misija</h1>
-                        <ol className='list-disc text-xl p-5 font-serif'>
-                            <li>Sa velikom posvećenošću pristupam svakom pojedincu kako bismo zajedno ostvarili što bolje rezultate.</li>
-                            <li>Vaš uspeh je i moj uspeh.</li>
-                            <li>Individualni pristup, podrška i edukacija svakog pojedinca je moj put ka vašem zdravlju.</li>
+                        <ol className='text-xl p-3 font-serif '>
+                            <li className='m-5 border-2  border-green-400 shadow-md shadow-gray-300 p-5'>Sa velikom posvećenošću pristupam svakom pojedincu kako bismo zajedno ostvarili što bolje rezultate, jer vaš uspeh je i moj uspeh.</li>
+
+                            <li className='m-5 border-2 shadow-md shadow-gray-300 border-green-400 p-5'>Individualni pristup, podrška i edukacija svakog pojedinca je moj put ka vašem zdravlju.</li>
                         </ol>
                         <Link className='border-2 border-green-600 p-2 rounded-full mt-2 font-serif font-semibold lg:w-[30%] w-[150px] justify-center flex' to={'onama'}>Više o meni</Link>
                     </div>
@@ -109,10 +109,9 @@ function Home() {
                         <ol className='list-disc text-xl p-5'>
                             <li>Personalizovane preporuke</li>
                             <li>Personalizovan jelovnik</li>
-                            <li>Recepte</li>
+                            <li>Recepti</li>
                             <li>Online kontrole i praćenje</li>
                             <li>Korekcije jelovnika</li>
-                            <li>Preporuke za put</li>
                         </ol>
                         <Link className='border-2 border-green-600 p-2 rounded-full font-serif font-semibold w-[150px] justify-center flex' to={'usluge'}>Više...</Link>
                     </div>

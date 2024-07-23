@@ -31,11 +31,11 @@ function Utisci() {
                 </div>
                 <div>
                     <h1 className='text-black m-5 text-3xl'>Marija Božić</h1>
-                    <p className=''>Tvoje znanje i strpljenje su mi pomogli da napravim promene u svojoj ishrani koje su mi značajno poboljšale kvalitet života. Tvoj pristup je uvek personalizovan i osećam se podržano na svakom koraku. Hvala ti na svemu što si učinila za mene.</p>
+                    <p className=''>Tvoje znanje i strpljenje su mi pomogli da napravim promene u svojoj ishrani koje su mi značajno poboljšale kvalitet života. Tvoj pristup je uvek personalizovan i osećam se podržano na svakom koraku!</p>
                 </div>
                 <div>
                     <h1 className='text-black m-5 text-3xl'>Đorđe Antonijević</h1>
-                    <p className=''>Ne znam kako bih bez tebe! Pre nego što sam te upoznao, moj obrok dana su bile grickalice ispred televizora. Sada, zahvaljujući tvojim savetima, jedem kao pravi nutricionistički šampion! Hvala ti što si me naučila da povrće može biti ukusno i što si me spasila od večitog života na brzinskoj hrani.</p>
+                    <p className=''>Ne znam kako bih bez tebe! Pre nego što sam te upoznao, moj obrok dana su bile grickalice ispred televizora. Sada, zahvaljujući tvojim savetima, jedem kao pravi nutricionistički šampion! Hvala ti što si me naučila da povrće može biti ukusno i što si me spasila od večitog života na brzoj hrani.</p>
                 </div>
 
             </div>
