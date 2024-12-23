@@ -28,12 +28,7 @@ export default function App() {
                 modules={[EffectCube, Pagination]}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                    <img src="/2.webp" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/3.webp" />
-                </SwiperSlide>
+               
                 <SwiperSlide>
                     <img src="/4.webp" />
                 </SwiperSlide>

@@ -97,7 +97,7 @@ function Home() {
                         </ul>
                     </div>
                     <div className='p-5'>
-                        <img className='w-[400px] h-[450px] p-5 shadow-md shadow-green-200 rounded-xl' src="/4.webp" alt="Milica Dzelebdzic" />
+                        <img className='w-[300px] h-[400px] p-5 shadow-md shadow-green-200 rounded-xl' src="/4.webp" alt="Milica Dzelebdzic" />
                     </div>
                 </div>
                 {/* Usluge */}
